@@ -1,0 +1,70 @@
+
+$buttoncolor: #b88a62;
+
+.boton_universal {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px 40px;
+    border-radius: 50px;
+    background-color: $buttoncolor;
+    color: black;
+    border: none;
+    text-decoration: none;
+
+    &:hover {
+        background: #5a4330;
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+.hover_boton_universal {
+    @extend .boton_universal;
+   
+    padding: 10px 0px;
+
+
+    &:hover {
+        background: #dbc096;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.section_titulos{
+    background-color: rgb(133, 163, 133);
+    padding: 30px;
+    margin-top: 20px;
+
+    @for $titulo from 2 through 6 {
+        // bloque de estilo
+        h#{$titulo} {
+            font-size: calc(100px / $titulo) ;
+        }
+        
+    }
+}
+
+$section: article;
+$colorUno: rgb(0, 0, 0);
+$colorDos: rgba(95, 81, 34, 0.945);
+$colorTres: #918333;
+$colorCuatro: rgba(77, 65, 40, 0.863);
+
+article {
+    @if $section != footer {
+        width: 600px;
+        background-color: rgb(163, 92, 45);
+        color: $colorUno;
+        text-align: center;
+        font-size: 20px;
+    }
+    @if $section == div {
+        color: $colorDos;
+    }
+    @if $section == section {
+        color: $colorTres;
+    }
+
+}
+

@@ -1,0 +1,21 @@
+
+
+.color_bgr_menu {
+   background-color:  rgb(138, 180, 138);
+}
+
+.img_radious {
+    border-radius: 60px;
+
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+
+    &:hover{
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.width_change_img {
+    width: 100%;
+
+}
