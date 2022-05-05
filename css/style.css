@@ -92,7 +92,7 @@ textarea:focus {
   font-family: "Source Sans Pro", sans-serif;
   padding: 20px 40px;
   border-radius: 50px;
-  background-color: #b88a62;
+  background-color: #e9a86f;
   color: black;
   border: none;
   text-decoration: none;
@@ -104,7 +104,8 @@ textarea:focus {
 }
 
 .hover_boton_universal {
-  padding: 10px 0px;
+  background-color: #b88a62;
+  padding: 20px;
 }
 .hover_boton_universal:hover {
   background: #dbc096;

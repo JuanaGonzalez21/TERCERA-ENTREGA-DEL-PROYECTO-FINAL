@@ -1,5 +1,5 @@
-
 $buttoncolor: #b88a62;
+
 
 .boton_universal {
     text-align: center;
@@ -7,7 +7,7 @@ $buttoncolor: #b88a62;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 20px 40px;
     border-radius: 50px;
-    background-color: $buttoncolor;
+    background-color: #e9a86f;
     color: black;
     border: none;
     text-decoration: none;
@@ -19,10 +19,13 @@ $buttoncolor: #b88a62;
     }
 }
 
+
 .hover_boton_universal {
     @extend .boton_universal;
-   
-    padding: 10px 0px;
+    background-color: $buttoncolor;
+    padding: 20px ;
+
+
 
 
     &:hover {
@@ -31,17 +34,23 @@ $buttoncolor: #b88a62;
     }
 }
 
-.section_titulos{
+
+
+
+
+
+.section_titulos {
     background-color: rgb(133, 163, 133);
     padding: 30px;
     margin-top: 20px;
 
     @for $titulo from 2 through 6 {
+
         // bloque de estilo
         h#{$titulo} {
-            font-size: calc(100px / $titulo) ;
+            font-size: calc(100px / $titulo);
         }
-        
+
     }
 }
 
@@ -52,19 +61,20 @@ $colorTres: #918333;
 $colorCuatro: rgba(77, 65, 40, 0.863);
 
 article {
-    @if $section != footer {
+    @if $section !=footer {
         width: 600px;
         background-color: rgb(163, 92, 45);
         color: $colorUno;
         text-align: center;
         font-size: 20px;
     }
-    @if $section == div {
+
+    @if $section==div {
         color: $colorDos;
     }
-    @if $section == section {
+
+    @if $section==section {
         color: $colorTres;
     }
 
 }
-
